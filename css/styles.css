@@ -611,6 +611,7 @@ p {
 
 .footer-send-icon {
   fill: #ffffff;
+  margin-left: 16px;
 }
 
 /* ----------------MODAL----------- */
