@@ -617,6 +617,7 @@ p {
 /* ----------------MODAL----------- */
 
 .modal-overlay {
+  position: relative;
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   top: 0;
@@ -671,6 +672,7 @@ p {
 }
 
 .close-modal {
+  padding: 0;
   border-radius: 50%;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -684,7 +686,8 @@ p {
   right: 24px;
   cursor: pointer;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-modal-svg {
@@ -692,8 +695,10 @@ p {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-modal:hover {
+.close-modal:hover,
+.close-modal:focus {
   background-color: #404bbf;
+  border: none;
 }
 
 .close-modal:hover .close-modal-svg {
