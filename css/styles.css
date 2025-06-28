@@ -571,8 +571,7 @@ p {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
 
 .footer-input::placeholder {
   color: #ffffff;
@@ -611,7 +610,6 @@ p {
 
 .footer-send-icon {
   fill: #ffffff;
-  margin-left: 16px;
 }
 
 /* ----------------MODAL----------- */
@@ -632,16 +630,12 @@ p {
   opacity: 0;
   pointer-events: none;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
-  padding: 72px 24px 24px 24px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-height: 584px;
   background-color: #fcfcfc;
   width: 408px;
   overflow-y: auto;
@@ -650,17 +644,6 @@ p {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   position: relative;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-text {
-  font-weight: 500; 
-  font-size: 16px; 
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #2E2F42;
-  margin-bottom: 16px;
 }
 
 .modal-overlay.is-open {
@@ -680,7 +663,6 @@ p {
 }
 
 .close-modal {
-  padding: 0;
   border-radius: 50%;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -695,7 +677,6 @@ p {
   cursor: pointer;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-modal-svg {
@@ -703,16 +684,11 @@ p {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-modal:hover,
-.close-modal:focus {
+.close-modal:hover {
   background-color: #404bbf;
-  border: none;
 }
 
 .close-modal:hover .close-modal-svg {
-  fill: #ffffff;
-}
-.close-modal:focus .close-modal-svg {
   fill: #ffffff;
 }
 
