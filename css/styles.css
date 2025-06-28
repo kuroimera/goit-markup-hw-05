@@ -429,27 +429,22 @@ p {
 }
 
 /* ------------------------FOOTER-------------------- */
-.footer-text {
-  color: #f4f4fd;
-  line-height: 1.5;
-  letter-spacing: 0.02px;
-  margin-top: 16px;
-}
-
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
 }
 
-.footer-text-block {
-  width: 266px;
-  margin-right: 120px;
-}
-
 .footer-container {
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 80px;
   padding: 0 15px;
+  flex-wrap: wrap;
+}
+
+.footer-text-block {
+  max-width: 264px;
 }
 
 .footer-logo {
@@ -468,14 +463,10 @@ p {
   color: #f4f4fd;
 }
 
-.logo-studio-footer {
+.footer-text {
   color: #f4f4fd;
-  letter-spacing: 0.03em;
-}
-
-.logo-studio-footer:hover,
-.logo-studio-footer:focus {
-  color: #404bbf;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .footer-socials,
@@ -491,9 +482,7 @@ p {
 .socials-footer-container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
   width: 208px;
-  margin-right: 80px;
 }
 
 .social-links-icons-footer {
@@ -505,7 +494,7 @@ p {
 }
 
 .social-link-icons-footer {
-  padding: 8px 8px;
+  padding: 8px;
   background-color: #4d5ae5;
   border-radius: 50%;
   display: flex;
@@ -513,10 +502,7 @@ p {
   justify-content: center;
   width: 40px;
   height: 40px;
-
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-icons-footer:hover,
@@ -524,37 +510,18 @@ p {
   background-color: #31d0aa;
 }
 
-.footer-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-items: baseline;
-}
-.footer-text-block {
-  max-width: 264px;
-  min-width: 264px;
-}
-
 .footer-icons {
   fill: #f4f4fd;
-}
-
-.footer-form {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
 }
 
 .subscribe-container {
   width: 453px;
 }
 
-.footer-subscribe-text {
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+.footer-form {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
 }
 
 .footer-input-container {
