@@ -557,13 +557,10 @@ p {
   letter-spacing: 0.02em;
 }
 
-.footer-input-container {
+.footer-input {
   display: flex;
   flex-direction: row;
   gap: 24px;
-}
-
-.footer-input {
   width: 264px;
   height: 40px;
   padding: 8px 16px;
