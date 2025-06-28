@@ -842,7 +842,7 @@ p {
   display: none;
 }
 
-checkbox-container
+.checkbox-container
   input[type="checkbox"]:checked
   + .checkbox-label
   .checkbox-box {
@@ -866,6 +866,7 @@ checkbox-container
   line-height: 1.33;
   letter-spacing: 0.04em;
   margin-left: 4px;
+  display: inline-flex;
 }
 
 .submit-button {
