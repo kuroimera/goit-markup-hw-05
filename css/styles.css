@@ -714,7 +714,6 @@ p {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 4px;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.04em;
@@ -724,6 +723,7 @@ p {
 .form-label {
   line-height: 1.17;
   color: #8e8f99;
+  margin-bottom: 4px;
 }
 
 .input-wrapper {
@@ -826,7 +826,6 @@ p {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   background-color: transparent;
-  display: inline-flex;
   justify-content: center;
   align-items: center;
   display: inline-flex;
