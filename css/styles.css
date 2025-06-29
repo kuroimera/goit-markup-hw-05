@@ -860,7 +860,7 @@ p {
   display: block;
 }
 
-.privacy-policy-text {
+.privacy-policy-link {
   text-decoration: underline;
   color: #4d5ae5;
   font-size: 12px;
