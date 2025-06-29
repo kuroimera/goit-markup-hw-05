@@ -591,7 +591,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   background: #4d5ae5;
   border: none;
   border-radius: 4px;
@@ -602,6 +601,10 @@ p {
   letter-spacing: 0.04em;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-send-icon {
+  flex-shrink: 0;
 }
 
 .footer-button:hover,
@@ -667,7 +670,6 @@ p {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-top: 56px;
   margin-bottom: 16px;
 }
 
@@ -722,7 +724,6 @@ p {
 .form-label {
   line-height: 1.17;
   color: #8e8f99;
-  margin-bottom: 4px;
 }
 
 .input-wrapper {
@@ -787,6 +788,7 @@ p {
 
 .textarea:focus {
   border-color: #4d5ae5;
+  color: #2e2f42;
 }
 
 /* -------------CHECKBOX------------ */
@@ -806,7 +808,6 @@ p {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 4px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -829,6 +830,7 @@ p {
   justify-content: center;
   align-items: center;
   display: inline-flex;
+  margin-right: 8px;
   fill: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
