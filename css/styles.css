@@ -737,7 +737,6 @@ p {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   transition: border;
-  margin-bottom: 8px;
   background-color: transparent;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -836,10 +835,7 @@ p {
 }
 
 .checkbox-icon {
-  width: 10px;
-  height: 8px;
   fill: white;
-  display: none;
 }
 
 .checkbox-container
